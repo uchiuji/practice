@@ -1,0 +1,113 @@
+body {
+    font-family: sans-serif;
+    background: #f4f4f9;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+.note {
+    font-size: 0.7rem;
+    color: #888;
+    margin-top: 4px;
+    margin-bottom: 0;
+    letter-spacing: -0.02em;
+    display: none; /* 初期は隠す */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-item label {
+    font-size: 0.8rem;
+    display: block;
+}
+
+.input-item input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* 無効化（サンダー時のチェリーBなど）のスタイル */
+input:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    background-color: #e9e9e9;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#result-area {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fffbe6;
+    border-radius: 5px;
+    border: 1px solid #ffe58f;
+    text-align: center;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 8px 0;
+    border-bottom: 1px dotted #ccc;
+}

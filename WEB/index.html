@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>設定判別ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>設定判別ツール</h1>
+        
+        <div class="input-group">
+            <label>機種選択</label>
+            <select id="slotType" onchange="calculate()">
+                <option value="VERSUS">ヴァーサスリヴァイズ</option>
+                <option value="THUNDER">サンダーVライトニング</option>
+            </select>
+            <p id="slot-note" class="note">note</p>
+        </div>
+
+        <div class="input-group">
+            <label>総ゲーム数</label>
+            <input type="number" id="gameCount" value="1000">
+        </div>
+
+        <div class="grid">
+            <div class="input-item"><label>チェリーA</label><input type="number" id="cherryA" value="-1"></div>
+            <div class="input-item"><label>チェリーB</label><input type="number" id="cherryB" value="-1"></div>
+            <div class="input-item"><label>ベルA</label><input type="number" id="bellA" value="-1"></div>
+            <div class="input-item"><label>ベルB</label><input type="number" id="bellB" value="-1"></div>
+            <div class="input-item"><label>スイカA</label><input type="number" id="suicaA" value="-1"></div>
+            <div class="input-item"><label>スイカB</label><input type="number" id="suicaB" value="-1"></div>
+        </div>
+
+        <button onclick="calculate()">判別実行</button>
+
+        <div id="result-area">
+            <h3>--- 判別結果 ---</h3>
+            <div id="output">数値を入力してボタンを押してください。</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
